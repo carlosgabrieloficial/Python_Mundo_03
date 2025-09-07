@@ -1,0 +1,15 @@
+tudo = []
+dado = []
+
+while True:
+
+    dado.append(str(input("Seu nome :")))
+    dado.append(float(input("Peso :")))
+    tudo.append(dado[:])
+    dado.clear()
+
+    resposta = str(input("Deseja continuar [S/N]"))
+    if resposta in "Nn":
+        break
+
+print(tudo)
