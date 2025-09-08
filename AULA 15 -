@@ -14,7 +14,7 @@ while True:
     tudo.append(dado[:])
     dado.clear()
 
-    if peso >= 100 :
+    if peso >= "100" :
         maiores_pesos.addend()
 
     quantidade = len(tudo)#contador de cadastro
