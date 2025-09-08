@@ -5,6 +5,7 @@
 
 tudo = []
 dado = []
+maiores_pesos = list
 
 while True:
 
@@ -13,7 +14,6 @@ while True:
     tudo.append(dado[:])
     dado.clear()
 
-    maiores_pesos = list
     if peso >= 100 :
         maiores_pesos.addend()
 
