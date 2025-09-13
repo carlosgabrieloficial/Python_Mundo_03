@@ -1,0 +1,33 @@
+def cadastrar_notas():
+    notas = []
+    while True:
+        nota = float(input("Insira a nota do aluno (ou -1 para parar): "))
+        if nota == -1:
+            break
+        notas.append(nota)
+    return notas
+
+def calcular_media(notas):
+    return sum(notas) / len(notas)
+
+def determinar_situacao(media):
+    if media >= 7:
+        return "Aprovado"
+    else:
+        return "Reprovado"
+
+def exibir_relatorio(notas, media, situacao):
+    print("Relatório Final:")
+    print(f"Notas: {notas}")
+    print(f"Média: {media:.2f}")
+    print(f"Situação: {situacao}")
+
+def main():
+    print("Sistema de Gestão de Notas")
+    notas = cadastrar_notas()
+    media = calcular_media(notas)
+    situacao = determinar_situacao(media)
+    exibir_relatorio(notas, media, situacao)
+
+if __name__ == "__main__":
+    main()
