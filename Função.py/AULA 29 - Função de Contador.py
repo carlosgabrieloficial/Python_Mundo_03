@@ -12,7 +12,7 @@ def linhas ():
         print(f"{i}", end=" ")
 
 
-    print("Agora é a sua vez")
+    print("\nAgora é a sua vez")
     inicio = int(input("inicio:"))
     fim = int(input("Final : "))
     passos = int(input("Passos : "))
